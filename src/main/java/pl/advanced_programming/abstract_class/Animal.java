@@ -5,7 +5,7 @@ import java.util.Objects;
 public abstract class Animal {
 
     private static final int NAME_MIN_LENGHT = 1;
-    private String name;
+    protected String name;
 
     public Animal(String name) {
         this.name = Objects.requireNonNull(name, "[name] cannot be null!!!");

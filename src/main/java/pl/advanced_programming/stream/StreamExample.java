@@ -50,7 +50,7 @@ public class StreamExample {
 //        ))
 //
 //        return Collections.emptyList();
-    }
+//    }
     public static BigDecimal sumMyItems (List < Order > orders) {
             return
                     orders.stream()
@@ -61,4 +61,5 @@ public class StreamExample {
     }
 
 
-}
+
+

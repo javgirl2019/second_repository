@@ -1,8 +1,8 @@
 package pl.advanced_programming.abstract_class;
 
-public class Dog extends Animal {
+public class Cat extends Animal{
 
-    public Dog(String name) {
+    public Cat(String name) {
         super(name);
     }
 
@@ -18,6 +18,6 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        return "Dog{}"+ "name \'" + name + "\'" + '}';
+        return "Cat{}" + "name \'" + name + "\'" + '}';
     }
 }
