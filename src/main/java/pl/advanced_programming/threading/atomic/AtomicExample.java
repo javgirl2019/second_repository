@@ -1,6 +1,4 @@
-package pl.advanced_programming.atomic;
-
-import sun.awt.windows.ThemeReader;
+package pl.advanced_programming.threading.atomic;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -10,8 +8,8 @@ public class AtomicExample {
         AtomicInteger i = new AtomicInteger();
 
         Runnable job = () -> {
-//        i.incrementAndGet(); //+ii
-//            i.getAndIncrement(); //i++
+            i.incrementAndGet(); //+ii
+            i.getAndIncrement(); //i++
 
             int currentValue = i.intValue();
          boolean test = true;

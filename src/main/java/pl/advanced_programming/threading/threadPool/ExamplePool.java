@@ -12,12 +12,12 @@ public class ExamplePool {
             System.out.println("Performed by 22222222: " + Thread.currentThread().getName());
         };
 
+
         ExecutorService workers = Executors.newFixedThreadPool(4);
         for ( int i = 0; i<200; i++) {
             workers.execute(job);
             workers.execute(job2);
         }
-
         workers.shutdown();
 //        workers.execute(job);
 
